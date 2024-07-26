@@ -4,6 +4,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from '../app.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { RecipeDataService } from '../recipe-data.service';
 
 
 @Component({
@@ -14,6 +15,9 @@ import { MatBadgeModule } from '@angular/material/badge';
   styleUrl: './recipecard.component.scss'
 })
 export class RecipecardComponent {
+  constructor(recipeData : RecipeDataService){
+
+  }
   like : number = 0
   hidden = false;
 
