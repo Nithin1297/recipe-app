@@ -1,1 +1,6 @@
-<p>dashboard works!</p>
+<div class="movie-list-container">
+    @for (item of allitems; track $index) {
+    <!-- <app-card [movies]="movie" (deleteItemEvent)="deleteMovie($event)"></app-card> -->
+    <app-recipecard [item]="item"/>
+    }
+  </div>

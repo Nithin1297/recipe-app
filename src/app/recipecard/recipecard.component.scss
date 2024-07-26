@@ -1,5 +1,5 @@
 .example-card {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0px;
   }
   
@@ -10,4 +10,7 @@
   .form-content{
     display: flex;
     gap: 1rem;
+  }
+  mat-card-content{
+    margin: 1rem;
   }
