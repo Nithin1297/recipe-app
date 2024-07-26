@@ -10,12 +10,19 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './search.component.scss',
 })
 export class SearchComponent {
-  search() {
-    // return this.allitems.filter(item => item.includes(this.searchText))
-  }
-  allitems: Array<recipe> = [];
+  allItems: Array<recipe>;
+  filteredItems: Array<recipe>;
   searchText: string = '';
-  constructor(private recipeservice: RecipeDataService) {
-    this.allitems = this.recipeservice.recipeData;
+
+  constructor(private recipeService: RecipeDataService) {
+    this.allItems = this.recipeService.recipeData;
+    this.filteredItems = this.allItems;
+  }
+
+  search() {
+    this.filteredItems = this.allItems.filter((item) =>
+      item.itemTitle.toLowerCase().includes(this.searchText.toLowerCase())
+    );
+    console.log(this.filteredItems);
   }
 }

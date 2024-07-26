@@ -1,1 +1,6 @@
-<input type="text" [(ngModel)]="searchText" placeholder="Search" (click)="search()">
+<input
+  type="text"
+  [(ngModel)]="searchText"
+  (input)="search()"
+  placeholder="Search by title"
+/>
