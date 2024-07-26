@@ -1,13 +1,18 @@
 <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-        <mat-card-title>Shiba Inu</mat-card-title>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button matBadge="15">LIKE</button>
-    </mat-card-actions>
-  </mat-card>
-  
+  <mat-card-header> </mat-card-header>
+  <img
+    mat-card-image
+    src="{{itemposter}}"
+    alt="Item Poster"
+  />
+  <mat-card-content>
+    <mat-card-title>{{itemTitle}}</mat-card-title>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button matBadge="7" (click)="toggleBadgeVisibility()">
+      <mat-icon
+        ><span class="material-symbols-outlined"> thumb_up </span></mat-icon
+      >
+    </button>
+  </mat-card-actions>
+</mat-card>
