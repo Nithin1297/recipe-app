@@ -2,21 +2,25 @@
   <mat-card-header> </mat-card-header>
   <img mat-card-image src="{{ item.itemImage }}" alt="Item Poster" />
   <mat-card-content>
-        <div class="form-content">
+    <div class="form-content">
       <mat-card-title>{{ item.itemTitle }}</mat-card-title>
-    
-    <!-- <mat-card-actions> -->
-      <button mat-raised-button matBadge="7" (click)="toggleBadgeVisibility()">
+
+      <!-- <mat-card-actions> -->
+      <button
+        mat-raised-button
+        matBadge="{{ like }}"
+        (click)="likeIncreament()"
+      >
         <mat-icon
           ><span class="material-symbols-outlined"> thumb_up </span></mat-icon
         >
       </button>
-    <!-- </mat-card-actions> -->
-    <button mat-raised-button (click)="toggleBadgeVisibility()">
+      <!-- </mat-card-actions> -->
+      <button mat-raised-button (click)="toggleBadgeVisibility()">
         <mat-icon
           ><span class="material-symbols-outlined"> info</span></mat-icon
         >
       </button>
     </div>
-    </mat-card-content>
+  </mat-card-content>
 </mat-card>
