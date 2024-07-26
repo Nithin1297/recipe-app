@@ -1,18 +1,17 @@
 <mat-card class="example-card" appearance="outlined">
   <mat-card-header> </mat-card-header>
-  <img
-    mat-card-image
-    src="{{itemposter}}"
-    alt="Item Poster"
-  />
-  <mat-card-content>
-    <mat-card-title>{{itemTitle}}</mat-card-title>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button matBadge="7" (click)="toggleBadgeVisibility()">
-      <mat-icon
-        ><span class="material-symbols-outlined"> thumb_up </span></mat-icon
-      >
-    </button>
-  </mat-card-actions>
+  <img mat-card-image src="{{ itemTitle.itemImage }}" alt="Item Poster" />
+  <div class="form-content">
+    <mat-card-content>
+      <mat-card-title>{{ itemTitle.itemTitle }}</mat-card-title>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button matBadge="7" (click)="toggleBadgeVisibility()">
+        <mat-icon
+          ><span class="material-symbols-outlined"> thumb_up </span></mat-icon
+        >
+      </button>
+    </mat-card-actions>
+    <button mat-raised-button>Basic</button>
+  </div>
 </mat-card>

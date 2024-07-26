@@ -1,12 +1,25 @@
-// import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
+
+type recipe = {
+itemTitle : string;
+itemposter : string;
+itemImage : string;
+itemType : string;
+itemDuration : string;
+itemLink : string;
+itemProcedure : string;
+itemIngredients : string;
+
+}
+
+@Injectable({
+  providedIn: 'root'
+})
 export class RecipeDataService {
 
 
-  recipeData = [
+  recipeData : Array<recipe> = [
     {
       itemTitle : "Chicken Biriyani",
       itemposter :"https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg",
