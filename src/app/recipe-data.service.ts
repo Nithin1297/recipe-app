@@ -38,7 +38,7 @@ export class RecipeDataService {
       itemProcedure: "Marinate chicken in yogurt and spices. Grill or bake until cooked. Simmer in a tomato-based sauce with spices.",
       itemIngredients: "Chicken, yogurt, onions, garlic, ginger, tomatoes, cream, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Chicken-Korma-square-FS-74.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -51,7 +51,7 @@ export class RecipeDataService {
       itemProcedure: "Marinate chicken in yogurt and spices. Cook in a tomato-based sauce with butter and cream.",
       itemIngredients: "Chicken, yogurt, onions, garlic, ginger, tomatoes, butter, cream, spices",
       itemposter:
-      'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+      'https://i0.wp.com/mykitchenlittle.com/wp-content/uploads/2023/12/Easy-Chicken-Mughlai-9-scaled.jpg?fit=1707%2C2560&ssl=1',
     itemImage:
       'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemLink:
@@ -64,7 +64,7 @@ export class RecipeDataService {
       itemProcedure: "Marinate chicken thighs in a spiced yogurt sauce. Grill until juicy and flavorful.",
       itemIngredients: "Chicken thighs, yogurt, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://vikalinka.com/wp-content/uploads/2022/05/Tandoori-Chicken-Air-Fryer-13-Edit.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -77,7 +77,7 @@ export class RecipeDataService {
       itemProcedure: "Marinate chicken in a spiced yogurt mixture. Grill or bake until cooked. Simmer in a tomato-based sauce.",
       itemIngredients: "Chicken, yogurt, onions, garlic, ginger, tomatoes, cream, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUcNTu6mSvUxTmg0k8qX70DsuxwrG-FqC29g&s',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -103,20 +103,7 @@ export class RecipeDataService {
       itemProcedure: "Cook lamb in a spicy, aromatic curry sauce.",
       itemIngredients: "Lamb, onions, garlic, ginger, tomatoes, spices, basmati rice",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
-      itemImage:
-        'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
-        itemLink:
-        'https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats',
-    },
-    {
-      itemTitle: "Chicken Biryani",
-      itemType: "Non-Veg",
-      itemDuration: "1 hour",
-      itemProcedure: "Cook chicken and rice separately. Layer and bake to create a flavorful, aromatic dish.",
-      itemIngredients: "Chicken, basmati rice, onions, garlic, ginger, spices",
-      itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiYpcZhCBeXVFOt22R_GvujCtDElyOe2pww&s',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -129,7 +116,7 @@ export class RecipeDataService {
       itemProcedure: "Cook spinach with onions and garlic. Add paneer cubes and simmer in a creamy sauce.",
       itemIngredients: "Spinach, onions, garlic, paneer, cream, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://healthynibblesandbits.com/wp-content/uploads/2020/01/Saag-Paneer-FF-500x500.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -142,7 +129,7 @@ export class RecipeDataService {
       itemProcedure: "Cook chickpeas with onions, garlic, and spices. Simmer in a tomato-based sauce.",
       itemIngredients: "Chickpeas, onions, garlic, tomatoes, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2020/01/easy-chana-masala-pan-768x1152.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -168,7 +155,7 @@ export class RecipeDataService {
       itemProcedure: "Cook vegetables and rice separately. Layer and bake to create a flavorful, aromatic dish.",
       itemIngredients: "Vegetables, basmati rice, onions, garlic, ginger, spices",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Vegetable-Biryani-With-Green-Raita-159c15d.jpg?quality=90&resize=556,505',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -207,7 +194,7 @@ export class RecipeDataService {
       itemProcedure: "Use a bread machine to create the perfect dough for a chewy, fluffy flatbread.",
       itemIngredients: "Flour, yeast, sugar, salt, water",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://www.thespeltkitchen.com/wp-content/uploads/2019/10/Simple-Bread-Machine-Garlic-Butter-Naan-Bread-1-1024x909.jpg.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
@@ -233,7 +220,7 @@ export class RecipeDataService {
       itemProcedure: "Cook milk with sugar and cardamom. Cool and churn into a creamy dessert.",
       itemIngredients: "Milk, sugar, cardamom",
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://www.sharmispassions.com/wp-content/uploads/2016/06/MalaiKulfi2.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
         itemLink:
