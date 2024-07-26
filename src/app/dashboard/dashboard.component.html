@@ -1,6 +1,7 @@
+<app-search />
+
 <div class="recipe-list-container">
-    @for (item of allitems; track $index) {
-    <!-- <app-card [movies]="movie" (deleteItemEvent)="deleteMovie($event)"></app-card> -->
-    <app-recipecard [item]="item"/>
-    }
-  </div>
+  @for (item of allitems; track $index) {
+  <app-recipecard [item]="item" />
+  }
+</div>
