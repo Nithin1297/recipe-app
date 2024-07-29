@@ -1,0 +1,51 @@
+.ifg {
+  background-image: url("https://img.freepik.com/free-photo/ingredients-sweet-apple-pie-stone-light-background_127032-3501.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+// .links {
+//   display: flex;
+//   gap: 3rem;
+//   justify-content: center;
+//   margin-top: 20px;
+//   // list-style-type: none; /* Removes the dots */
+//   // padding: 0; /* Removes the default padding */
+//   // margin: 0;
+// }
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10rem;
+  font-family: bold;
+  font-weight: 700;
+}
+
+.discription {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+// .home-page {
+//   margin-top: px;
+// }
+// .button {
+//   justify-content: center;
+// }
+.container {
+  display: grid;
+  place-items: center; /* Centers items both horizontally and vertically */
+  // height: 100vh;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
