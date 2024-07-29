@@ -1,12 +1,15 @@
 
 .recipe-overview{
     display: flex;
-    max-width: 800px;
+    // width: 1000px;
+    padding: 2rem;
+    max-width: 1000px;
     gap: 2rem;
+    background-color: whitesmoke;
 }
 .recipe-overview img{
     border-radius: 10%;
-    width: 500px;
+    width: 100%;
     height: 400px;
 }
 .meta{
