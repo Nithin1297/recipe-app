@@ -1,23 +1,21 @@
 <body>
   <div class="serach-bar">
-    <app-search (filteredItemsChange)="updateFilteredItems($event)"></app-search>
+    <app-search
+      (filteredItemsChange)="updateFilteredItems($event)"
+    ></app-search>
   </div>
-  
+
   @if (filteredItems.length === 0) {
   <div class="recipe-list-container">
     @for (item of allitems; track $index) {
     <app-recipecard [item]="item" />
     }
   </div>
-  }
-  @else {
+  } @else {
   <div class="recipe-list-container">
     @for (item of filteredItems; track $index) {
-    <!-- <ng-container *ngFor="let item of filteredItems"> -->
-      <app-recipecard [item]="item"></app-recipecard>
-    <!-- </ng-container> -->
-  }
+    <app-recipecard [item]="item"></app-recipecard>
+    }
   </div>
   }
-  
 </body>
