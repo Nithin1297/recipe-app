@@ -23,14 +23,8 @@ export class SearchComponent {
   }
 
   search() {
-    this.filteredItems = this.allItems.filter(
-      (item) =>
-        item.itemTitle
-          .toLowerCase()
-          .includes(this.searchText.toLocaleLowerCase()) ||
-        item.itemIngredients
-          .toLowerCase()
-          .includes(this.searchText.toLocaleLowerCase())
+    this.filteredItems = this.allItems.filter((item) =>
+      item.itemTitle.toLowerCase().includes(this.searchText.toLocaleLowerCase())
     );
     console.log(this.filteredItems);
     this.filteredItemsChange.emit(this.filteredItems);
