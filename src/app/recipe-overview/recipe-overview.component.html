@@ -1,17 +1,21 @@
-<div class="recipe-overview">
-  <img src="{{ item.itemposter }}" alt="{{ item.itemTitle }}" />
-  <h2>{{ item.itemTitle }}</h2>
-  <div class="meta">
-    <span class="duration">{{ item.itemDuration }}</span>
-    <span class="type">{{ item.itemType }}</span>
-    <a [href]="item.itemLink" target="_blank">Watch Video</a>
+<body>
+  <div class="recipe-overview">
+    <img src="{{ item.itemposter }}" alt="{{ item.itemTitle }}" />
+    <div class="content">
+      <h2>{{ item.itemTitle }}</h2>
+      <div class="meta">
+        <span class="duration">{{ item.itemDuration }}</span>
+        <span class="type">{{ item.itemType }}</span>
+        <a [href]="item.itemLink" target="_blank">Watch Video</a>
+      </div>
+      <div class="procedure">
+        <h3>Procedure</h3>
+        <p>{{ item.itemProcedure }}</p>
+      </div>
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <p>{{ item.itemIngredients }}</p>
+      </div>
+    </div>
   </div>
-  <div class="procedure">
-    <h3>Procedure</h3>
-    <p>{{ item.itemProcedure }}</p>
-  </div>
-  <div class="ingredients">
-    <h3>Ingredients</h3>
-    <p>{{ item.itemIngredients }}</p>
-  </div>
-</div>
+</body>
