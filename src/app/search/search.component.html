@@ -5,21 +5,21 @@
   
 /> -->
 
-  <div class="form">
-    <table class="example-full-width" cellspacing="0">
-      <tr>
-        <td>
-          <mat-form-field class="example-full-width">
-            <mat-label>Wanna Explore?</mat-label>
-            <input
-              matInput
-              type="text"
-              [(ngModel)]="searchText"
-              (input)="search()"
-              placeholder="Type Something!"
-            />
-          </mat-form-field>
-        </td>
-      </tr>
-    </table>
-  </div>
+<div class="form">
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <mat-label>Search Recipes</mat-label>
+          <input
+            matInput
+            type="text"
+            [(ngModel)]="searchText"
+            (input)="search()"
+            placeholder="Type Something!"
+          />
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+</div>
