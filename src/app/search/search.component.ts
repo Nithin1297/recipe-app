@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [FormsModule,FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [FormsModule, FormsModule, MatFormFieldModule, MatInputModule],
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',
 })
@@ -20,12 +20,17 @@ export class SearchComponent {
 
   constructor(private recipeService: RecipeDataService) {
     this.allItems = this.recipeService.recipeData;
-    // this.filteredItems = this.allItems;
   }
 
   search() {
-    this.filteredItems = this.allItems.filter((item) =>
-      item.itemTitle.toLowerCase().includes(this.searchText.toLowerCase())
+    this.filteredItems = this.allItems.filter(
+      (item) =>
+        item.itemTitle
+          .toLowerCase()
+          .includes(this.searchText.toLocaleLowerCase()) ||
+        item.itemIngredients
+          .toLowerCase()
+          .includes(this.searchText.toLocaleLowerCase())
     );
     console.log(this.filteredItems);
     this.filteredItemsChange.emit(this.filteredItems);

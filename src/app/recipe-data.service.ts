@@ -14,11 +14,10 @@ export type recipe = {
 @Injectable({
   providedIn: 'root',
 })
-
 export class RecipeDataService {
   recipeData: Array<recipe> = [
     {
-      itemTitle: 'Chicken Biriyani',
+      itemTitle: ' Chicken Biriyani',
       itemposter:
         'https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg',
       itemImage:
