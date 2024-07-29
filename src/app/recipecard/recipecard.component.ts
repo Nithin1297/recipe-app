@@ -5,6 +5,7 @@ import { AppComponent } from '../app.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { RecipeDataService } from '../recipe-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipecard',
@@ -20,8 +21,12 @@ import { RecipeDataService } from '../recipe-data.service';
   styleUrl: './recipecard.component.scss',
 })
 export class RecipecardComponent {
-  constructor(public recepinfo: RecipeDataService) {}
+  constructor(public recepinfo: RecipeDataService, private router: Router) {}
 
+  openRecipeOverview() {
+    this.router.navigate(['/overview', this.item.itemTitle]);
+  }
+  
   @Input() item = {
     itemTitle: 'Chicken Biriyani',
     itemposter:

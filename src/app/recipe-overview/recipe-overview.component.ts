@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RecipeDataService } from '../recipe-data.service';
 
 @Component({
   selector: 'app-recipe-overview',
@@ -8,5 +10,14 @@ import { Component } from '@angular/core';
   styleUrl: './recipe-overview.component.scss'
 })
 export class RecipeOverviewComponent {
-
+item: any;
+constructor(
+  private route: ActivatedRoute,
+  private recipeService: RecipeDataService
+) {
+  this.route.params.subscribe(params => {
+    const title = params['title'];
+    this.item = this.recipeService.recipeData.find(recipe => recipe.itemTitle === title);
+  });
+}
 }

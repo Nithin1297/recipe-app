@@ -5,22 +5,22 @@ import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
 
-
-  export const routes: Routes = [
-    {
-        path: '',
-        component : LandingPageComponent,
-    },
-    {
-        path : 'recipes',
-        component: DashboardComponent,
-    },
-    {
-        path : 'overview',
-        component: RecipeOverviewComponent,
-    },
-    {
-        path : '**',
-        component: PageNotFoundComponent,
-    },
+export const routes: Routes = [
+  {
+    path: '',
+    component: LandingPageComponent,
+  },
+  {
+    path: 'recipes',
+    component: DashboardComponent,
+  },
+  { path: 'overview/:title', component: RecipeOverviewComponent },
+  {
+    path: 'overview',
+    component: RecipeOverviewComponent,
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  },
 ];
