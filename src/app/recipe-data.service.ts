@@ -14,12 +14,13 @@ export type recipe = {
 @Injectable({
   providedIn: 'root',
 })
+
 export class RecipeDataService {
   recipeData: Array<recipe> = [
     {
       itemTitle: 'Chicken Biriyani',
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemType: 'Non-Veg',
@@ -97,7 +98,7 @@ export class RecipeDataService {
       itemProcedure: 'Cook chicken in a rich, creamy tomato-based sauce.',
       itemIngredients: 'Chicken, tomatoes, cream, butter, spices',
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFjjnBRSbS3KfH6STLM6J753Mk86DSo5aDQ&s',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemLink:
@@ -154,7 +155,7 @@ export class RecipeDataService {
       itemIngredients:
         'Potatoes, cauliflower, onions, garlic, tomatoes, spices',
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://shwetainthekitchen.com/wp-content/uploads/2024/01/aloo-gobi.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemLink:
@@ -183,20 +184,7 @@ export class RecipeDataService {
         'Steam cauliflower until tender. Fry until crispy. Coat in a spicy sauce.',
       itemIngredients: 'Cauliflower, onions, garlic, ginger, spices, soy sauce',
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
-      itemImage:
-        'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
-      itemLink:
-        'https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats',
-    },
-    {
-      itemTitle: 'Lentil Dal',
-      itemType: 'Veg',
-      itemDuration: '30 minutes',
-      itemProcedure: 'Simmer red lentils in a tomato broth with spices.',
-      itemIngredients: 'Red lentils, onions, garlic, ginger, tomatoes, spices',
-      itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://thehappyfoodie.co.uk/wp-content/uploads/2023/03/Cauliflower-Gobi-Manchurian-Recipe-.jpg',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemLink:
@@ -225,7 +213,7 @@ export class RecipeDataService {
       itemIngredients:
         'Shredded coconut, sweetened condensed milk, cardamom, dark chocolate chips',
       itemposter:
-        'https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/4:3/w_5100,h_3825,c_limit/RoastChicken_RECIPE_080420_37993.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkf8DjpDeix-Nh4EjQZQ2O3V0TiXamosWqFQ&s',
       itemImage:
         'https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg',
       itemLink:
