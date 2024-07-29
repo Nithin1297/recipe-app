@@ -1,16 +1,25 @@
-<input
+<!-- <input
   type="text"
   [(ngModel)]="searchText"
-  (input)="search()"
-  placeholder="Search by title"
-/>
+  (input)="search()" 
+  
+/> -->
 
-
-<!-- <div *ngIf="searchText">
-  <p>Results for "{{ searchText }}":</p>
-  <ul>
-    <li *ngFor="let item of allItems">
-      {{ item.itemTitle }}
-    </li>
-  </ul>
-</div> -->
+  <div class="form">
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Wanna Explore?</mat-label>
+            <input
+              matInput
+              type="text"
+              [(ngModel)]="searchText"
+              (input)="search()"
+              placeholder="Type Something!"
+            />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+  </div>
