@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { recipe, RecipeDataService } from '../recipe-data.service';
 import { FormsModule } from '@angular/forms';
 
@@ -11,12 +11,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class SearchComponent {
   allItems: Array<recipe>;
-  filteredItems: Array<recipe>;
-  searchText: string = '';
+  filteredItems: Array<recipe> = [];
+  searchText: string = ' ';
+
+  @Output() filteredItemsChange = new EventEmitter<Array<recipe>>();
 
   constructor(private recipeService: RecipeDataService) {
     this.allItems = this.recipeService.recipeData;
-    this.filteredItems = this.allItems;
+    // this.filteredItems = this.allItems;
   }
 
   search() {
@@ -24,5 +26,6 @@ export class SearchComponent {
       item.itemTitle.toLowerCase().includes(this.searchText.toLowerCase())
     );
     console.log(this.filteredItems);
+    this.filteredItemsChange.emit(this.filteredItems);
   }
 }

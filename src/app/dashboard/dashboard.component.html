@@ -1,7 +1,19 @@
-<app-search />
+<app-search (filteredItemsChange)="updateFilteredItems($event)"></app-search>
 
+@if (filteredItems.length === 0) {
 <div class="recipe-list-container">
   @for (item of allitems; track $index) {
   <app-recipecard [item]="item" />
   }
 </div>
+}
+@else {
+<div class="recipe-list-container">
+  @for (item of filteredItems; track $index) {
+  <!-- <ng-container *ngFor="let item of filteredItems"> -->
+    <app-recipecard [item]="item"></app-recipecard>
+  <!-- </ng-container> -->
+}
+</div>
+}
+
