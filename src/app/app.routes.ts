@@ -3,6 +3,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
 
 
   export const routes: Routes = [
@@ -15,8 +16,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         component: DashboardComponent,
     },
     {
-        path : 'search',
-        component: SearchComponent,
+        path : 'overview',
+        component: RecipeOverviewComponent,
     },
     {
         path : '**',
