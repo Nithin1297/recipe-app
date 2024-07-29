@@ -8,6 +8,11 @@
 //       // margin: 0;
 //     }
 
+nav{
+    background: green;
+    height: 30px;
+}
+
 
     .nav-list {
         display: flex;
@@ -26,6 +31,6 @@
         color: #333;
       }
 
-      .nav-list:hover{
-        font-weight: bold;
-      }
+    //   .nav-list:hover{
+    //     font-weight: bold;
+    //   }
