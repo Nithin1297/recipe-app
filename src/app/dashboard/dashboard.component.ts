@@ -26,4 +26,10 @@ export class DashboardComponent {
   loadRecipies() {
     this.recipeservice.getAllRecipesP().then((data) => (this.allitems = data));
   }
+
+  deleteRecipeP(recipes: recipe) {
+    this.recipeservice.deleteMovie(recipes).then(() => {
+      this.loadRecipies(); // Reload movies after deletion
+    })
+  }
 }

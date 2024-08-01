@@ -10,3 +10,5 @@ export interface Irecipies {
   ingrediants: string;
 }
 export type InewRecipe = Omit<Irecipies, 'id'>;
+
+ 

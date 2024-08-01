@@ -260,4 +260,11 @@ export class RecipeDataService {
       },
     }).then((res) => res.json());
   }
+
+  deleteMovie(recipes: recipe) {
+    return fetch(
+      `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${recipes.id}`,
+      { method: 'Delete' }
+    ).then((res) => res.json());
+  }
 }

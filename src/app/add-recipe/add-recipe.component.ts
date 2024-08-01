@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Router } from '@angular/router';
 import { recipe, RecipeDataService } from '../recipe-data.service';
 import { InewRecipe } from '../irecipies';
+import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-add-recipe',
@@ -20,6 +21,7 @@ import { InewRecipe } from '../irecipies';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatRadioModule
   ],
   templateUrl: './add-recipe.component.html',
   styleUrl: './add-recipe.component.scss',

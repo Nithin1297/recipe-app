@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from '../app.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
-import { RecipeDataService } from '../recipe-data.service';
+import { recipe, RecipeDataService } from '../recipe-data.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -22,10 +22,17 @@ import { Router } from '@angular/router';
 })
 export class RecipecardComponent {
   constructor(public recepinfo: RecipeDataService, private router: Router) {}
+  @Output() deleteRecipeEvent: EventEmitter<recipe> = new EventEmitter<recipe>();
+ 
 
   openRecipeOverview() {
     this.router.navigate(['/overview', this.item.id]);
   }
+
+  deleteRecipeItem(){
+    this.deleteRecipeEvent.emit(this.item);
+  }
+  
   
   @Input() item = {
     id : '',
