@@ -7,17 +7,20 @@ import { RecipeDataService } from '../recipe-data.service';
   standalone: true,
   imports: [],
   templateUrl: './recipe-overview.component.html',
-  styleUrl: './recipe-overview.component.scss'
+  styleUrl: './recipe-overview.component.scss',
 })
 export class RecipeOverviewComponent {
-item: any;
-constructor(
-  private route: ActivatedRoute,
-  private recipeService: RecipeDataService
-) {
-  this.route.params.subscribe(params => {
-    const title = params['title'];
-    this.item = this.recipeService.recipeData.find(recipe => recipe.itemTitle === title);
-  });
-}
+  item: any;
+  constructor(
+    private route: ActivatedRoute,
+    private recipeService: RecipeDataService
+  ) {
+    this.route.params.subscribe((params) => {
+      const title = params['title'];
+      this.item = this.recipeService
+        .getAllRecipesP()
+        .then((data) =>  data)
+        // .find((recipe) => recipe.itemTitle === title);
+    });
+  }
 }
