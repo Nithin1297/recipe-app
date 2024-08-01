@@ -9,3 +9,4 @@ export interface Irecipies {
   itemProcedure: string;
   itemIngredients: string;
 }
+export type InewRecipe = Omit<Irecipies, 'id'>;

@@ -4,6 +4,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 
 export const routes: Routes = [
   {
@@ -15,10 +16,8 @@ export const routes: Routes = [
     component: DashboardComponent,
   },
   { path: 'overview/:id', component: RecipeOverviewComponent },
-  // {
-  //   path: 'overview',
-  //   component: RecipeOverviewComponent,
-  // },
+  
+  { path: 'addRecipe', component: AddRecipeComponent },
   {
     path: '**',
     component: PageNotFoundComponent,

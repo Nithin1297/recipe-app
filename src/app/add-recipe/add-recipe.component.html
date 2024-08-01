@@ -1,63 +1,84 @@
-<form [formGroup]="movieForm" (ngSubmit)="addMovie()" class="add-movie-form">
+<form [formGroup]="recipeForm" (ngSubmit)="addRecipe()" class="add-movie-form">
     <mat-form-field>
       <mat-label>Name</mat-label>
       <input
         matInput
-        placeholder="Phani the rockstar ⭐"
+        placeholder="Name"
         formControlName="name"
       />
    
-      @if(name?.touched && name?.hasError('required') ){
+      <!-- @if(name?.touched && name?.hasError('required') ){
       <mat-error>Name is <strong>required</strong></mat-error>
       } @if(name?.touched && name?.hasError('minlength') ){
       <mat-error>Please provide full movie name 😁</mat-error>
-      }
+      } -->
     </mat-form-field>
    
     <mat-form-field>
       <mat-label>Poster</mat-label>
       <input matInput placeholder="http://" formControlName="poster" />
-      @if(poster?.touched && poster?.hasError('required') ){
+      <!-- @if(poster?.touched && poster?.hasError('required') ){
       <mat-error>Image Url is <strong>required</strong></mat-error>
-      }
+      } -->
     </mat-form-field>
    
     <mat-form-field>
-      <mat-label>Rating</mat-label>
-      <input type="number" matInput placeholder="8" formControlName="rating" />
+      <mat-label>image</mat-label>
+      <input matInput placeholder="image" formControlName="image" />
    
-      @if(rating?.touched && rating?.hasError('required') ){
+      <!-- @if(rating?.touched && rating?.hasError('required') ){
       <mat-error>Rating is <strong>required</strong></mat-error>
       } @if(rating?.touched && rating?.hasError('min') ){
       <mat-error>Rating is <strong>too low 🥲</strong></mat-error>
       } @if(rating?.touched && rating?.hasError('max') ){
       <mat-error>Rating is too high 😓</mat-error>
-      }
+      } -->
     </mat-form-field>
    
     <mat-form-field>
-      <mat-label>Summary</mat-label>
+      <mat-label>Type</mat-label>
       <input
         matInput
-        placeholder="Your awesome summary 🎊"
-        formControlName="summary"
+        placeholder="recipe type"
+        formControlName="type"
       />
-      @if(summary?.touched && summary?.hasError('required') ){
+      <!-- @if(summary?.touched && summary?.hasError('required') ){
       <mat-error>Summary is <strong>required</strong></mat-error>
       }@if(summary?.touched && summary?.hasError('minlength') ){
       <mat-error
         >Sumamry should be <strong>atleast 20 characters</strong></mat-error
       >
-      }
+      } -->
     </mat-form-field>
    
     <mat-form-field>
-      <mat-label>Trailer</mat-label>
-      <input matInput placeholder="http://" formControlName="trailer" />
-      @if(trailer?.touched && trailer?.hasError('required') ){
+      <mat-label>Duration</mat-label>
+      <input matInput placeholder="minutes" formControlName="duration" />
+      <!-- @if(trailer?.touched && trailer?.hasError('required') ){
       <mat-error>Trailer is <strong>required</strong></mat-error>
-      }
+      } -->
     </mat-form-field>
+    <mat-form-field>
+        <mat-label>Link</mat-label>
+        <input matInput placeholder="https://" formControlName="link" />
+        <!-- @if(trailer?.touched && trailer?.hasError('required') ){
+        <mat-error>Trailer is <strong>required</strong></mat-error>
+        } -->
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Procedure</mat-label>
+        <input matInput placeholder="" formControlName="procedure" />
+        <!-- @if(trailer?.touched && trailer?.hasError('required') ){
+        <mat-error>Trailer is <strong>required</strong></mat-error>
+        } -->
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingrediants</mat-label>
+        <input matInput placeholder="salt" formControlName="ingrediants" />
+        <!-- @if(trailer?.touched && trailer?.hasError('required') ){
+        <mat-error>Trailer is <strong>required</strong></mat-error>
+        } -->
+      </mat-form-field>
    
-    <button mat-raised-button type="submit">Add Movie</button>
+    <button mat-raised-button type="submit">Add Recipe</button>
   </form>

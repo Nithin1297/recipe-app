@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Irecipies } from './irecipies';
+import { InewRecipe, Irecipies } from './irecipies';
 
 export interface recipe {
   id: string;
@@ -249,4 +249,16 @@ export class RecipeDataService {
       `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${id}`
     ).then((res) => res.json());
   }
+  
+
+  addRecipeP(newRecipe: InewRecipe) {
+    return fetch(`https://669a42a59ba098ed61fef807.mockapi.io/recipes`, {
+      method: 'POST',
+      body: JSON.stringify(newRecipe),
+      headers: {
+        'Content-type': 'application/json',
+      },
+    }).then((res) => res.json());
+  }
+
 }
