@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Irecipies } from './irecipies';
 
-export interface recipe  {
-  id : string;
+export interface recipe {
+  id: string;
   itemTitle: string;
   itemposter: string;
   itemImage: string;
@@ -11,7 +11,7 @@ export interface recipe  {
   itemLink: string;
   itemProcedure: string;
   itemIngredients: string;
-};
+}
 
 @Injectable({
   providedIn: 'root',
@@ -238,9 +238,15 @@ export class RecipeDataService {
 
   constructor() {}
 
-  getAllRecipesP() : Promise<recipe[]>  {
-   return fetch('https://669a42a59ba098ed61fef807.mockapi.io/recipes').then(
+  getAllRecipesP(): Promise<recipe[]> {
+    return fetch('https://669a42a59ba098ed61fef807.mockapi.io/recipes').then(
       (res) => res.json()
     );
+  }
+
+  getRecipeByIdP(id: string): Promise<recipe> {
+    return fetch(
+      `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${id}`
+    ).then((res) => res.json());
   }
 }
