@@ -31,7 +31,7 @@ export class SearchComponent {
   search() {
     this.filteredItems = this.allItems.filter(
       (item) =>
-        item.itemTitle
+        item.name
           .toLowerCase()
           .includes(this.searchText.toLocaleLowerCase())
     );

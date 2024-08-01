@@ -3,14 +3,14 @@ import { InewRecipe, Irecipies } from './irecipies';
 
 export interface recipe {
   id: string;
-  itemTitle: string;
-  itemposter: string;
-  itemImage: string;
-  itemType: string;
-  itemDuration: string;
-  itemLink: string;
-  itemProcedure: string;
-  itemIngredients: string;
+  name: string;
+  poster: string;
+  image: string;
+  type: string;
+  duration: string;
+  link: string;
+  procedure: string;
+  ingrediants: string;
 }
 
 @Injectable({
@@ -260,5 +260,4 @@ export class RecipeDataService {
       },
     }).then((res) => res.json());
   }
-
 }

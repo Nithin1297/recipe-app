@@ -1,20 +1,20 @@
 <body>
   <div class="recipe-overview">
-    <img src="{{ item.itemImage }}" alt="{{ item.itemTitle }}" />
+    <img src="{{ item.image }}" alt="{{ item.name }}" />
     <div class="content">
-      <h2>{{ item.itemTitle }}</h2>
+      <h2>{{ item.name }}</h2>
       <div class="meta">
-        <span class="duration">{{ item.itemDuration }}</span>
-        <span class="type">{{ item.itemType }}</span>
-        <a [href]="item.itemLink" target="_blank">Watch Video</a>
+        <span class="duration">{{ item.duration }}</span>
+        <span class="type">{{ item.type }}</span>
+        <a [href]="item.link" target="_blank">Watch Video</a>
       </div>
       <div class="procedure">
         <h3>Procedure</h3>
-        <p>{{ item.itemProcedure }}</p>
+        <p>{{ item.procedure }}</p>
       </div>
       <div class="ingredients">
         <h3>Ingredients</h3>
-        <p>{{ item.itemIngredients }}</p>
+        <p>{{ item.ingrediants }}</p>
       </div>
     </div>
   </div>

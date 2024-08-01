@@ -1,0 +1,167 @@
+[
+  {
+    "id": "1",
+    "name": " Chicken Biriyani",
+    "poster": "https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "type": "Non-Veg",
+    "duration": "55 Minnutes",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats",
+    "procedure": "Marinate chicken with yogurt, ginger, garlic, and spices. Cook with ground masala and rice.",
+    "ingrediants": "Chicken, basmati rice, yogurt, ginger, garlic, onions, ghee, cooking oil, spices"
+  },
+  {
+    "id": "2",
+    "name": "Chicken Korma",
+    "type": "Non-Veg",
+    "duration": "1 hour",
+    "procedure": "Marinate chicken in yogurt and spices. Grill or bake until cooked. Simmer in a tomato-based sauce with spices.",
+    "ingrediants": "Chicken, yogurt, onions, garlic, ginger, tomatoes, cream, spices",
+    "poster": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Chicken-Korma-square-FS-74.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "3",
+    "name": "Mughali Chicken",
+    "type": "Non-Veg",
+    "duration": "1 hour",
+    "procedure": "Marinate chicken in yogurt and spices. Cook in a tomato-based sauce with butter and cream.",
+    "ingrediants": "Chicken, yogurt, onions, garlic, ginger, tomatoes, butter, cream, spices",
+    "poster": "https://i0.wp.com/mykitchenlittle.com/wp-content/uploads/2023/12/Easy-Chicken-Mughlai-9-scaled.jpg?fit=1707%2C2560&ssl=1",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "4",
+    "name": "Tandoori Chicken Thighs",
+    "type": "Non-Veg",
+    "duration": "30 minutes",
+    "procedure": "Marinate chicken thighs in a spiced yogurt sauce. Grill until juicy and flavorful.",
+    "ingrediants": "Chicken thighs, yogurt, spices",
+    "poster": "https://vikalinka.com/wp-content/uploads/2022/05/Tandoori-Chicken-Air-Fryer-13-Edit.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "5",
+    "name": "Chicken Tikka Masala",
+    "type": "Non-Veg",
+    "duration": "1 hour",
+    "procedure": "Marinate chicken in a spiced yogurt mixture. Grill or bake until cooked. Simmer in a tomato-based sauce.",
+    "ingrediants": "Chicken, yogurt, onions, garlic, ginger, tomatoes, cream, spices",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUcNTu6mSvUxTmg0k8qX70DsuxwrG-FqC29g&s",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "6",
+    "name": "Butter Chicken",
+    "type": "Non-Veg",
+    "duration": "1 hour",
+    "procedure": "Cook chicken in a rich, creamy tomato-based sauce.",
+    "ingrediants": "Chicken, tomatoes, cream, butter, spices",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFjjnBRSbS3KfH6STLM6J753Mk86DSo5aDQ&s",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "6",
+    "name": "Lamb Curry",
+    "type": "Non-Veg",
+    "duration": "1 hour",
+    "procedure": "Cook lamb in a spicy, aromatic curry sauce.",
+    "ingrediants": "Lamb, onions, garlic, ginger, tomatoes, spices, basmati rice",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiYpcZhCBeXVFOt22R_GvujCtDElyOe2pww&s",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "7",
+    "name": "Saag Paneer",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Cook spinach with onions and garlic. Add paneer cubes and simmer in a creamy sauce.",
+    "ingrediants": "Spinach, onions, garlic, paneer, cream, spices",
+    "poster": "https://healthynibblesandbits.com/wp-content/uploads/2020/01/Saag-Paneer-FF-500x500.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "8",
+    "name": "Chana Masala",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Cook chickpeas with onions, garlic, and spices. Simmer in a tomato-based sauce.",
+    "ingrediants": "Chickpeas, onions, garlic, tomatoes, spices",
+    "poster": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2020/01/easy-chana-masala-pan-768x1152.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "9",
+    "name": "Aloo Gobi",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Cook potatoes and cauliflower with onions, garlic, and spices. Simmer in a tomato-based sauce.",
+    "ingrediants": "Potatoes, cauliflower, onions, garlic, tomatoes, spices",
+    "poster": "https://shwetainthekitchen.com/wp-content/uploads/2024/01/aloo-gobi.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "10",
+    "name": "Vegetable Biryani",
+    "type": "Veg",
+    "duration": "1 hour",
+    "procedure": "Cook vegetables and rice separately. Layer and bake to create a flavorful, aromatic dish.",
+    "ingrediants": "Vegetables, basmati rice, onions, garlic, ginger, spices",
+    "poster": "https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Vegetable-Biryani-With-Green-Raita-159c15d.jpg?quality=90&resize=556,505",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "11",
+    "name": "Gobi Manchurian",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Steam cauliflower until tender. Fry until crispy. Coat in a spicy sauce.",
+    "ingrediants": "Cauliflower, onions, garlic, ginger, spices, soy sauce",
+    "poster": "https://thehappyfoodie.co.uk/wp-content/uploads/2023/03/Cauliflower-Gobi-Manchurian-Recipe-.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "12",
+    "name": "Bread Machine Naan",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Use a bread machine to create the perfect dough for a chewy, fluffy flatbread.",
+    "ingrediants": "Flour, yeast, sugar, salt, water",
+    "poster": "https://www.thespeltkitchen.com/wp-content/uploads/2019/10/Simple-Bread-Machine-Garlic-Butter-Naan-Bread-1-1024x909.jpg.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "13",
+    "name": "Coconut Burfi Brownie Bites",
+    "type": "Veg",
+    "duration": "30 minutes",
+    "procedure": "Mix shredded coconut with sweetened condensed milk and cardamom. Shape into bites and coat with chocolate.",
+    "ingrediants": "Shredded coconut, sweetened condensed milk, cardamom, dark chocolate chips",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkf8DjpDeix-Nh4EjQZQ2O3V0TiXamosWqFQ&s",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  },
+  {
+    "id": "14",
+    "name": "Kulfi",
+    "type": "Veg",
+    "duration": "1 hour",
+    "procedure": "Cook milk with sugar and cardamom. Cool and churn into a creamy dessert.",
+    "ingrediants": "Milk, sugar, cardamom",
+    "poster": "https://www.sharmispassions.com/wp-content/uploads/2016/06/MalaiKulfi2.jpg",
+    "image": "https://m.media-amazon.com/images/I/81j-Ml3dQfL._AC_UF1000,1000_QL80_.jpg",
+    "link": "https://www.youtube.com/watch?v=95BCU1n268w&ab_channel=SpiceEats"
+  }
+]

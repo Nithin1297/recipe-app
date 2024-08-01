@@ -1,12 +1,12 @@
 export interface Irecipies {
   id: string;
-  itemTitle: string;
-  itemposter: string;
-  itemImage: string;
-  itemType: string;
-  itemDuration: string;
-  itemLink: string;
-  itemProcedure: string;
-  itemIngredients: string;
+  name: string;
+  poster: string;
+  image: string;
+  type: string;
+  duration: string;
+  link: string;
+  procedure: string;
+  ingrediants: string;
 }
 export type InewRecipe = Omit<Irecipies, 'id'>;
