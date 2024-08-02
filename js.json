@@ -79,7 +79,7 @@
   {
     "id": "7",
     "name": "Saag Paneer",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Cook spinach with onions and garlic. Add paneer cubes and simmer in a creamy sauce.",
     "ingrediants": "Spinach, onions, garlic, paneer, cream, spices",
@@ -90,7 +90,7 @@
   {
     "id": "8",
     "name": "Chana Masala",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Cook chickpeas with onions, garlic, and spices. Simmer in a tomato-based sauce.",
     "ingrediants": "Chickpeas, onions, garlic, tomatoes, spices",
@@ -101,7 +101,7 @@
   {
     "id": "9",
     "name": "Aloo Gobi",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Cook potatoes and cauliflower with onions, garlic, and spices. Simmer in a tomato-based sauce.",
     "ingrediants": "Potatoes, cauliflower, onions, garlic, tomatoes, spices",
@@ -112,7 +112,7 @@
   {
     "id": "10",
     "name": "Vegetable Biryani",
-    "type": "Veg",
+    "type": "veg",
     "duration": "1 hour",
     "procedure": "Cook vegetables and rice separately. Layer and bake to create a flavorful, aromatic dish.",
     "ingrediants": "Vegetables, basmati rice, onions, garlic, ginger, spices",
@@ -123,7 +123,7 @@
   {
     "id": "11",
     "name": "Gobi Manchurian",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Steam cauliflower until tender. Fry until crispy. Coat in a spicy sauce.",
     "ingrediants": "Cauliflower, onions, garlic, ginger, spices, soy sauce",
@@ -134,7 +134,7 @@
   {
     "id": "12",
     "name": "Bread Machine Naan",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Use a bread machine to create the perfect dough for a chewy, fluffy flatbread.",
     "ingrediants": "Flour, yeast, sugar, salt, water",
@@ -145,7 +145,7 @@
   {
     "id": "13",
     "name": "Coconut Burfi Brownie Bites",
-    "type": "Veg",
+    "type": "veg",
     "duration": "30 minutes",
     "procedure": "Mix shredded coconut with sweetened condensed milk and cardamom. Shape into bites and coat with chocolate.",
     "ingrediants": "Shredded coconut, sweetened condensed milk, cardamom, dark chocolate chips",
@@ -156,7 +156,7 @@
   {
     "id": "14",
     "name": "Kulfi",
-    "type": "Veg",
+    "type": "veg",
     "duration": "1 hour",
     "procedure": "Cook milk with sugar and cardamom. Cool and churn into a creamy dessert.",
     "ingrediants": "Milk, sugar, cardamom",
