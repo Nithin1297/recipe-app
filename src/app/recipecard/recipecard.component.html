@@ -6,7 +6,7 @@
       <mat-card-title>{{ item.name }}</mat-card-title>
 
       <!-- <mat-card-actions> -->
-      <button
+      <!-- <button
         mat-raised-button
         matBadge="{{ like }}"
         (click)="likeIncreament()"
@@ -14,7 +14,8 @@
         <mat-icon
           ><span class="material-symbols-outlined"> thumb_up </span></mat-icon
         >
-      </button>
+      </button> -->
+
       <!-- </mat-card-actions> -->
       <button mat-raised-button (click)="openRecipeOverview()">
         <mat-icon
@@ -25,6 +26,12 @@
       <button mat-raised-button (click)="deleteRecipeItem()">
         <mat-icon
           ><span class="material-symbols-outlined"> delete</span></mat-icon
+        >
+      </button>
+
+      <button mat-raised-button [routerLink]="['/edit', item.id]">
+        <mat-icon
+          ><span class="material-symbols-outlined"> edit</span></mat-icon
         >
       </button>
     </div>

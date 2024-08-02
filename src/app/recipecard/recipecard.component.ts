@@ -5,7 +5,7 @@ import { AppComponent } from '../app.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { recipe, RecipeDataService } from '../recipe-data.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-recipecard',
@@ -16,12 +16,15 @@ import { Router } from '@angular/router';
     AppComponent,
     MatIconModule,
     MatBadgeModule,
+    RouterLink
   ],
   templateUrl: './recipecard.component.html',
   styleUrl: './recipecard.component.scss',
 })
 export class RecipecardComponent {
   constructor(public recepinfo: RecipeDataService, private router: Router) {}
+  @Input() id!: string;
+
   @Output() deleteRecipeEvent: EventEmitter<recipe> = new EventEmitter<recipe>();
  
 

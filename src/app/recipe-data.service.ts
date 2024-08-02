@@ -249,7 +249,6 @@ export class RecipeDataService {
       `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${id}`
     ).then((res) => res.json());
   }
-  
 
   addRecipeP(newRecipe: InewRecipe) {
     return fetch(`https://669a42a59ba098ed61fef807.mockapi.io/recipes`, {
@@ -265,6 +264,19 @@ export class RecipeDataService {
     return fetch(
       `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${recipes.id}`,
       { method: 'Delete' }
+    ).then((res) => res.json());
+  }
+
+  editrecipeItem(editrecipeItem: recipe) {
+    return fetch(
+      `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${editrecipeItem.id}`,
+      {
+        method: 'PUT',
+        body: JSON.stringify(editrecipeItem),
+        headers: {
+          'Content-type': 'application/json',
+        },
+      }
     ).then((res) => res.json());
   }
 }

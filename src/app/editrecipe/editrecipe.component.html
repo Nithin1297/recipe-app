@@ -1,0 +1,60 @@
+<form
+  [formGroup]="recipeForm"
+  (ngSubmit)="editrecipe()"
+  class="edit-recipe-form"
+>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Recipe Name" formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Poster</mat-label>
+    <input matInput placeholder="http://" formControlName="poster" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Image</mat-label>
+    <input matInput placeholder="http://" formControlName="image" />
+  </mat-form-field>
+
+  <!-- <mat-form-field>
+    <mat-label>Type</mat-label>
+    <input matInput placeholder="Recipe Type" formControlName="type" />
+  </mat-form-field> -->
+  <mat-radio-group aria-label="Select an option" formControlName="type">
+    <mat-label>Select Item Type : </mat-label>
+    <mat-radio-button value="veg">Veg</mat-radio-button>
+    <mat-radio-button value="Non-Veg">Non-Veg</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-form-field>
+    <mat-label>Duration</mat-label>
+    <input matInput placeholder="Duration" formControlName="duration" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Link</mat-label>
+    <input matInput placeholder="http://" formControlName="link" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Procedure</mat-label>
+    <textarea
+      matInput
+      placeholder="Procedure"
+      formControlName="procedure"
+    ></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Ingredients</mat-label>
+    <textarea
+      matInput
+      placeholder="Ingredients"
+      formControlName="ingrediants"
+    ></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Update Recipe</button>
+</form>
