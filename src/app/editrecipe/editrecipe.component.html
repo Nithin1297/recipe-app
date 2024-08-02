@@ -7,36 +7,58 @@
     <mat-label>Name</mat-label>
     <input matInput placeholder="Recipe Name" formControlName="name" />
   </mat-form-field>
+  @if(name?.touched && name?.hasError('required') ){
+  <mat-error>Name is <strong>required</strong></mat-error>
+  } @if(name?.touched && name?.hasError('minlength') ){
+  <mat-error>Please provide full recipe name 😁</mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Poster</mat-label>
     <input matInput placeholder="http://" formControlName="poster" />
   </mat-form-field>
+  @if(poster?.touched && poster?.hasError('required') ){
+  <mat-error>Image Url is <strong>required</strong></mat-error>
+  }@if(poster?.touched && poster?.hasError('pattern') ){
+  <mat-error>Pattern should start with https://</mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Image</mat-label>
     <input matInput placeholder="http://" formControlName="image" />
   </mat-form-field>
+  @if(image?.touched && image?.hasError('required') ){
+  <mat-error>Image is <strong>required</strong></mat-error>
+  }@if(image?.touched && image?.hasError('pattern') ){
+  <mat-error>Pattern should start with https://</mat-error>
+  }
 
-  <!-- <mat-form-field>
-    <mat-label>Type</mat-label>
-    <input matInput placeholder="Recipe Type" formControlName="type" />
-  </mat-form-field> -->
   <mat-radio-group aria-label="Select an option" formControlName="type">
     <mat-label>Select Item Type : </mat-label>
     <mat-radio-button value="veg">Veg</mat-radio-button>
     <mat-radio-button value="Non-Veg">Non-Veg</mat-radio-button>
   </mat-radio-group>
+  @if(type?.touched && type?.hasError('required') ){
+  <mat-error>type is <strong>required</strong></mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Duration</mat-label>
     <input matInput placeholder="Duration" formControlName="duration" />
   </mat-form-field>
+  @if(duration?.touched && duration?.hasError('required') ){
+  <mat-error>duration is <strong>required</strong></mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Link</mat-label>
     <input matInput placeholder="http://" formControlName="link" />
   </mat-form-field>
+  @if(link?.touched && link?.hasError('required') ){
+  <mat-error>Link is <strong>required</strong></mat-error>
+  }@if(link?.touched && link?.hasError('pattern') ){
+  <mat-error>Pattern should start with https://</mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Procedure</mat-label>
@@ -46,6 +68,11 @@
       formControlName="procedure"
     ></textarea>
   </mat-form-field>
+  @if(procedure?.touched && procedure?.hasError('required') ){
+  <mat-error>Procedure is <strong>required</strong></mat-error>
+  }@if(procedure?.touched && procedure?.hasError('minlength') ){
+  <mat-error>Procedure should have atleast 20 characters</mat-error>
+  }
 
   <mat-form-field>
     <mat-label>Ingredients</mat-label>
@@ -55,6 +82,9 @@
       formControlName="ingrediants"
     ></textarea>
   </mat-form-field>
+  @if(ingrediants?.touched && ingrediants?.hasError('required') ){
+  <mat-error>ingrediants is <strong>required</strong></mat-error>
+  }
 
   <button mat-raised-button type="submit">Update Recipe</button>
 </form>

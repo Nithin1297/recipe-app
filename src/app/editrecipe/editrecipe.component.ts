@@ -36,18 +36,13 @@ export class EditrecipeComponent {
     private router: Router
   ) {
     this.recipeForm = this.fb.group({
-      // name: ['', [Validators.required]],
-      // poster: ['', [Validators.required]],
-      // image: ['', [Validators.required]],
-      // // summary: ['',[Validators.required]],
-      // // trailer: ['',[Validators.required]],
-      name: ['', [Validators.required]],
-      poster: ['', [Validators.required]],
-      image: ['', [Validators.required]],
+      name: ['', [Validators.required,Validators.minLength(2)]],
+      poster: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
+      image: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
       type: ['', [Validators.required]],
       duration: ['', [Validators.required]],
-      link: ['', [Validators.required]],
-      procedure: ['', [Validators.required]],
+      link: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
+      procedure: ['', [Validators.required,Validators.minLength(20)]],
       ingrediants: ['', [Validators.required]],
     });
 
@@ -75,6 +70,7 @@ export class EditrecipeComponent {
     }
   }
 
+  
   get name() {
     return this.recipeForm.get('name');
   }
@@ -96,7 +92,6 @@ export class EditrecipeComponent {
   get procedure() {
     return this.recipeForm.get('procedure');
   }
-
   get ingrediants() {
     return this.recipeForm.get('ingrediants');
   }
