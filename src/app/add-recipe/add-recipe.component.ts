@@ -35,13 +35,13 @@ export class AddRecipeComponent {
     private fb: FormBuilder
   ) {
     this.recipeForm = this.fb.group({
-      name: ['', [Validators.required]],
-      poster: ['', [Validators.required]],
-      image: ['', [Validators.required]],
+      name: ['', [Validators.required,Validators.minLength(2)]],
+      poster: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
+      image: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
       type: ['', [Validators.required]],
       duration: ['', [Validators.required]],
-      link: ['', [Validators.required]],
-      procedure: ['', [Validators.required]],
+      link: ['', [Validators.required, Validators.pattern(/^https:\/\/.*/)]],
+      procedure: ['', [Validators.required,Validators.minLength(20)]],
       ingrediants: ['', [Validators.required]],
     });
   }
@@ -57,19 +57,28 @@ export class AddRecipeComponent {
     }
   }
 
-  // get name() {
-  //   return this.movieForm.get('name');
-  // }
-  // get rating() {
-  //   return this.movieForm.get('rating');
-  // }
-  // get poster() {
-  //   return this.movieForm.get('poster');
-  // }
-  // get trailer() {
-  //   return this.movieForm.get('trailer');
-  // }
-  // get summary() {
-  //   return this.movieForm.get('summary');
-  // }
+  get name() {
+    return this.recipeForm.get('name');
+  }
+  get poster() {
+    return this.recipeForm.get('poster');
+  }
+  get image() {
+    return this.recipeForm.get('image');
+  }
+  get type() {
+    return this.recipeForm.get('type');
+  }
+  get duration() {
+    return this.recipeForm.get('duration');
+  }
+  get link() {
+    return this.recipeForm.get('link');
+  }
+  get procedure() {
+    return this.recipeForm.get('procedure');
+  }
+  get ingrediants() {
+    return this.recipeForm.get('ingrediants');
+  }
 }
