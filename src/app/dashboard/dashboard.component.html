@@ -1,11 +1,42 @@
 <body>
-  <div class="serach-bar">
-    <app-search
-      (filteredItemsChange)="updateFilteredItems($event)"
-    ></app-search>
+  <div class="form">
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field [formGroup]="searchForm" class="example-full-width">
+            <mat-label>Search Recipes</mat-label>
+            <input matInput placeholder="search..." formControlName="search" />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
   </div>
 
-  @if (filteredItems.length === 0) {
+  @if (allitems.length == 0) {
+  <h2>No Result found</h2>
+  } @if (filteredItems.length === 0) {
+  <div class="recipe-list-container">
+    @for (item of allitems; track $index) {
+    <app-recipecard
+      [item]="item"
+      (deleteRecipeEvent)="deleteRecipeP(item)"
+      [id]="item.id"
+    />
+    }
+  </div>
+  } @else {
+  <div class="recipe-list-container">
+    @for (item of filteredItems; track $index) {
+    <app-recipecard
+      [item]="item"
+      (deleteRecipeEvent)="deleteRecipeP(item)"
+      [id]="item.id"
+    ></app-recipecard>
+    }
+  </div>
+  }
+
+  <!-- @if (filteredItems.length === 0) {
   <div class="recipe-list-container">
     @for (item of allitems; track $index) {
     <app-recipecard
@@ -26,5 +57,5 @@
 
     }
   </div>
-  }
+  } -->
 </body>

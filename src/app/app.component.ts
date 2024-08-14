@@ -3,12 +3,20 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { RecipecardComponent } from './recipecard/recipecard.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { RecipeOverviewComponent } from "./recipe-overview/recipe-overview.component";
+import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RecipecardComponent, DashboardComponent, LandingPageComponent, RouterLink, RecipeOverviewComponent],
+  imports: [
+    RouterOutlet,
+    RecipecardComponent,
+    DashboardComponent,
+    LandingPageComponent,
+    RouterLink,
+    RecipeOverviewComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InewRecipe, Irecipies } from './irecipies';
+import { HttpClient } from '@angular/common/http';
 
 export interface recipe {
   id: string;
@@ -236,7 +237,7 @@ export class RecipeDataService {
   //   },
   // ];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getAllRecipesP(): Promise<recipe[]> {
     return fetch('https://669a42a59ba098ed61fef807.mockapi.io/recipes').then(
@@ -265,6 +266,12 @@ export class RecipeDataService {
       `https://669a42a59ba098ed61fef807.mockapi.io/recipes/${recipes.id}`,
       { method: 'Delete' }
     ).then((res) => res.json());
+  }
+
+  searchUser(searchTerm: string) {
+    return this.http.get<recipe[]>(
+      `https://669a42a59ba098ed61fef807.mockapi.io/recipes?search=${searchTerm}`
+    );
   }
 
   editrecipeItem(editrecipeItem: recipe) {
